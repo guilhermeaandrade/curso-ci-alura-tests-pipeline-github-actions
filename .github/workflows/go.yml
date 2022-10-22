@@ -62,5 +62,6 @@ jobs:
     secrets: inherit
 
   deploy_ec2:
+    needs: build
     uses: ./.github/workflows/ec2.yml
     secrets: inherit
